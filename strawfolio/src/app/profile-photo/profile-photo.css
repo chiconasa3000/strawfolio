@@ -1,0 +1,12 @@
+.user-p-img{
+    width: 20%;
+    height:auto;
+}
+
+.user-p-img img {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  object-fit: cover;
+}
