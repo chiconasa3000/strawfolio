@@ -1,10 +1,41 @@
-<div class="min-h-screen bg-gray-900 text-gray-100 font-sans scroll-smooth">
-    <app-navbar></app-navbar>
-    <main class="container">
+<div class="bg-slate-900 min-h-screen text-slate-300 selection:bg-cyan-300 selection:text-cyan-900 font-sans">
+      <app-navbar></app-navbar>
+      
+      <main>
         <app-hero></app-hero>
-        <app-about></app-about>
+        
+        <!-- About Section (Simple Text) -->
+        <section id="about" class="py-24 bg-slate-900">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-12 items-center">
+            <div class="md:w-1/2">
+               <h2 class="text-3xl font-bold text-slate-100 mb-8 flex items-center">
+                <span class="text-cyan-400 mr-2">01.</span> About Me
+                <span class="ml-4 h-px bg-slate-700 flex-grow max-w-xs"></span>
+              </h2>
+              <div class="space-y-4 text-slate-400 leading-relaxed">
+                <p>
+                  Hello! My name is Christian and I am a curious developer building software for you and me
+                </p>
+                <p>
+                  During my tenure as a systems engineer, I acquired a strong foundation in software development. Throughout my career, I have actively participated in research projects, including medical image segmentation for COVID-19 detection in collaboration with the University of Oklahoma. These projects showcased my competency in constructing and implementing machine learning models. My main focus these days is building accessible, inclusive products and digital experiences.
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center relative group">
+              <div class="relative w-64 h-64 md:w-80 md:h-80">
+                <div class="absolute inset-0 border-2 border-cyan-400 rounded translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
+                <div class="absolute inset-0 bg-cyan-500/20 group-hover:bg-transparent transition-colors rounded overflow-hidden z-10"></div>
+                <!-- Abstract Avatar Placeholder -->
+                <div class="w-full h-full bg-slate-700 rounded flex items-center justify-center overflow-hidden">
+                  <img src="assets/img/me.jpg" alt="me">   
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <app-skills></app-skills>
         <app-projects></app-projects>
         <app-contact></app-contact>
-    </main>
-</div>
+      </main>
+    </div>

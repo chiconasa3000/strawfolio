@@ -1,0 +1,7 @@
+:host {
+    display: block;
+}
+/* Smooth Scroll Behavior handled globally in styles usually, but enforcing here */
+html {
+    scroll-behavior: smooth;
+}

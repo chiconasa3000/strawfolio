@@ -1,11 +1,17 @@
-<section id="skills" class="py-20">
-    <h3 class="text-3xl font-semibold mb-8">Skills</h3>
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-        <div class="bg-gray-800 p-4 rounded-xl text-center">Angular</div>
-        <div class="bg-gray-800 p-4 rounded-xl text-center">TailwindCSS</div>
-        <div class="bg-gray-800 p-4 rounded-xl text-center">Node.js</div>
-        <div class="bg-gray-800 p-4 rounded-xl text-center">MongoDB</div>
-        <div class="bg-gray-800 p-4 rounded-xl text-center">Express.js</div>
-        <div class="bg-gray-800 p-4 rounded-xl text-center">TypeScript</div>
-    </div>
-</section>
+<section id="skills" class="py-24 bg-slate-900 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-slate-100 mb-12 flex items-center">
+          <span class="text-cyan-400 mr-2">02.</span> My Tech Stack
+          <span class="ml-4 h-px bg-slate-700 flex-grow max-w-xs"></span>
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          @for (skill of skills; track skill.name) {
+            <div class="group bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-cyan-400/50 transition-all hover:-translate-y-2 hover:shadow-[0_5px_20px_-10px_rgba(6,182,212,0.3)] flex flex-col items-center justify-center gap-4">
+              <div class="text-slate-400 group-hover:text-cyan-400 transition-colors" [innerHTML]="skill.icon"></div>
+              <span class="text-slate-300 font-medium">{{ skill.name }}</span>
+            </div>
+          }
+        </div>
+      </div>
+    </section>
